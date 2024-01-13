@@ -1,0 +1,157 @@
+/* Reset de estilos globales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos generales del body */
+body {
+  background-image: url('assets/bg-illustration.svg');
+  background-repeat: no-repeat;
+  background-position: right center; /* SVG a la derecha y centrado verticalmente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #111729;
+  position: relative;
+  flex-direction: column;
+}
+
+/* Contenedor principal */
+.container1{
+  width: 75%;
+  display: grid;
+  place-items: center;
+  margin-top: -140px;
+}
+
+/* Imagen dentro del contenedor */
+.container1 img {
+  width: 200px;
+  height: 100px;
+}
+
+/* Contenedor del input */
+.container-input {
+  position: relative;
+  width: 40%;
+  border-radius: 20px;
+}
+
+/* Estilos del input de texto */
+input[type="text"] {
+  width: 100%;
+  border-radius: 20px;
+  padding: 1.5rem;
+  background-color: #000;
+  color: #fff;
+  border: 2px solid #3662E3;
+}
+/* Estilos cuando el input está en estado :focus */
+input[type="text"]:focus {
+  outline: none; /* Esto elimina el borde predeterminado al enfocar */
+  border-color: #3662E3; /* Puedes ajustar este color si lo deseas */
+  box-shadow: 0 0 5px rgba(54, 98, 227, 0.5); /* Efecto de sombra cuando está enfocado */
+}
+
+/* Botón */
+.container-input button {
+  width: 150px;
+  padding: 1.2rem;
+  border: none;
+  background-color: #3662E3;
+  color: white;
+  border-radius: 10px;
+  position: absolute;
+  right: 1%;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+/* Estilos para la imagen dentro de .container2 */
+.header-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 2rem;
+  width: 100%;
+}
+/* Estilos del contenedor2 */
+.container2 {
+  display: flex;
+  align-items: center;       /* Centra verticalmente */
+  justify-content: center;   /* Centra horizontalmente */
+  flex-direction: column;    /* Apila los elementos verticalmente */
+}
+
+/* Estilos del contenedor del QR */
+.contenedor-qr {
+  width: 300px;
+  height: 300px;
+  background-color: #4e80ee33;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;       /* Centra verticalmente */
+  justify-content: center;   /* Centra horizontalmente */
+  margin-bottom: 40px;
+  margin: 0 auto;
+}
+
+/* Estilos del QR */
+.qr {
+  width: 250px;
+  height: 250px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.qr img {
+  padding: 1.7rem;
+}
+
+/* Estilos para los botones */
+.btn-qr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+/* Estilos para el contenedor de los botones */
+.btn-download,
+.btn-share {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+/* Estilos para los botones Download y Share */
+.btn-share button, 
+.btn-download button {
+  display: flex;               /* Hace que el contenido interno del botón se muestre en línea */
+  flex-direction: row-reverse; /* invertimos el icono y texto*/
+  align-items: center;         /* Centra verticalmente el contenido del botón */
+  justify-content: center;     /* Centra horizontalmente el contenido del botón */
+  padding: 1.0rem 2rem;
+  border: none;
+  background-color: #3662E3;
+  color: white;
+  border-radius: 15px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1rem;
+  width: 160px;               /* Ajusta el ancho para acomodar el ícono y el texto */
+  margin: 0 15px;
+  user-select: none;
+  
+}
+
+/* Estilos para los íconos dentro de los botones */
+.btn-share button i,
+.btn-download button i {
+  margin-left: 15px;         /* Espacio entre el ícono y el texto */
+  user-select: none;
+}

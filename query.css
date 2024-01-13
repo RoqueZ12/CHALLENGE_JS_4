@@ -1,0 +1,15 @@
+/* Media query para pantallas entre 641px y 1279px */
+@media (min-width: 641px) and (max-width: 1279px) {
+    .container1,
+    .container-input {
+      width: 90%;
+    }
+  }
+  
+  /* Media query para pantallas de 1280px o más */
+  @media (min-width: 1280px) {
+    .container1,
+    .container-input {
+      width: 90%;
+    }
+  }

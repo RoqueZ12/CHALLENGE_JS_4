@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="query.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <title>CHALLENGE_JS4</title>
+  </head>
+  <body>
+    <header id="logo-header" class="header-img">
+      <img src="assets/logo-qr-generator.svg" />
+    </header>
+    <div class="container1">
+      <img src="assets/logo-qr-generator.svg" />
+      <div class="container-input">
+        <input
+          required
+          id="input-url"
+          type="text"
+          name="text"
+          placeholder="Enter an url"
+        />
+        <button id="button-qr">QR code</button>
+      </div>
+    </div>
+
+    <div class="container2">
+      <div class="contenedor-qr">
+        <div class="qr">
+          <img id="showQr" />
+        </div>
+      </div>
+      <div class="btn-qr">
+        <div class="btn-download">
+          <button id="download">
+            <i class="fas fa-download"></i> Download
+          </button>
+        </div>
+        <div class="btn-share">
+          <button id="share"><i class="fas fa-share-alt"></i> Share</button>
+        </div>
+      </div>
+    </div>
+    <script src="codeqr.js"></script>
+    <script src="https://unpkg.com/qrious@4.0.2/dist/qrious.js"></script>
+  </body>
+</html>
